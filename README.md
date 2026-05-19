@@ -2,22 +2,35 @@
 
 ## Overview
 
-This repository contains a collection of hands-on offensive security and penetration testing labs performed within isolated and authorized educational environments.
+This repository contains a collection of hands-on offensive security, penetration testing, Active Directory exploitation, web security, and privilege escalation labs performed within isolated and authorized educational environments such as TryHackMe and vulnerable lab machines.
 
-The labs focus on practical cybersecurity concepts including:
-- Network enumeration
-- Web reconnaissance
-- Vulnerability assessment
-- Web exploitation
-- Reverse shell handling
-- Linux privilege escalation
-- Windows exploitation
-- Cron job abuse
-- PATH hijacking
-- Payload generation
-- Shell stabilization
+The repository focuses on documenting practical attack methodologies, exploitation workflows, post-exploitation techniques, and structured security reporting commonly used during offensive security assessments and red-team simulations.
 
-The purpose of this repository is to document technical methodologies, demonstrate practical security skills, and showcase structured security reporting and analysis.
+The labs cover practical cybersecurity concepts including:
+- Network Enumeration
+- Web Reconnaissance
+- Vulnerability Assessment
+- Active Directory Exploitation
+- Kerberos Attacks
+- SMB Enumeration
+- Web Exploitation
+- Reverse Shell Handling
+- Linux Privilege Escalation
+- Windows Exploitation
+- DCSync Attacks
+- Pass-the-Hash
+- NTDS Extraction
+- Cron Job Abuse
+- PATH Hijacking
+- Payload Generation
+- Shell Stabilization
+
+The purpose of this repository is to:
+- Demonstrate practical offensive security skills
+- Document technical methodologies
+- Showcase penetration testing workflows
+- Present structured technical reporting
+- Build a professional cybersecurity portfolio
 
 ---
 
@@ -31,39 +44,55 @@ The purpose of this repository is to document technical methodologies, demonstra
 | `jangow-enumeration-lab` | Web enumeration, hidden directory discovery, and credential exposure analysis |
 | `ms17-010-eternalblue` | SMB vulnerability validation and controlled EternalBlue exploitation |
 | `msfvenom-tomcat-exploitation` | Apache Tomcat enumeration, WAR payload deployment, and reverse shell establishment |
-| `linux-privilege-escalation` | Web exploitation, reverse shell handling, and SUID privilege escalation |
+| `linux-privilege-escalation` | Web exploitation, reverse shell handling, and Linux privilege escalation techniques |
 | `cron-path-hijacking-privesc` | Cron job analysis, PATH hijacking exploitation, and privilege escalation |
+| `attacktive-directory` | Active Directory penetration testing including Kerberos enumeration, AS-REP roasting, SMB enumeration, DCSync, NTDS extraction, and Pass-the-Hash attacks |
 
 ---
 
 # Topics Covered
 
 ## Offensive Security
+- Penetration Testing
 - Vulnerability Assessment
-- Enumeration
-- Web Reconnaissance
-- Reverse Shells
+- Enumeration & Reconnaissance
+- Active Directory Exploitation
 - Privilege Escalation
 - Web Exploitation
 - SMB Exploitation
+- Post-Exploitation Techniques
+
+## Active Directory Security
+- Kerberos Enumeration
+- AS-REP Roasting
+- SMB Enumeration
+- Credential Discovery
+- DCSync Attacks
+- NTDS Extraction
+- Pass-the-Hash
+- WinRM Exploitation
 
 ## Linux Security
 - SUID Exploitation
 - PATH Hijacking
 - Cron Job Exploitation
-- Shell Stabilization
+- Reverse Shell Stabilization
 - Bash Operations
+- Privilege Escalation Techniques
 
 ## Windows Exploitation
 - SMB Enumeration
 - EternalBlue (MS17-010)
 - Meterpreter Session Handling
+- Active Directory Attacks
+- Remote Administration Exploitation
 
 ## Web Security
 - Directory Enumeration
 - Apache Tomcat Enumeration
 - WAR Payload Deployment
 - Command Execution Validation
+- Authentication Weakness Analysis
 
 ---
 
@@ -80,30 +109,52 @@ The purpose of this repository is to document technical methodologies, demonstra
 - curl
 - arp-scan
 - John the Ripper
+- Kerbrute
+- Impacket
+- Evil-WinRM
+- smbclient
+- enum4linux
 
 ---
 
 # Skills Demonstrated
 
 - Penetration Testing Methodology
-- Enumeration & Reconnaissance
+- Active Directory Enumeration
 - Vulnerability Validation
+- Web Application Security Testing
 - Reverse Shell Handling
 - Linux Privilege Escalation
+- Windows Exploitation
 - Shell Stabilization
+- Credential Attacks
+- Post-Exploitation Techniques
 - Technical Documentation
 - Security Reporting
 
 ---
 
+# Report Documentation
+
+Most labs include:
+- Structured walkthrough reports
+- Technical methodology documentation
+- Screenshots & validation evidence
+- Exploitation steps
+- Security implications
+- Learning outcomes
+
+---
+
 # Notes
 
-- All activities were conducted in isolated lab environments using intentionally vulnerable systems.
-- The repository is intended for educational and defensive cybersecurity learning purposes only.
+- All activities were conducted in isolated and authorized lab environments using intentionally vulnerable systems.
+- The repository is intended strictly for educational, defensive, and cybersecurity training purposes.
 - No real-world unauthorized testing or malicious activity was performed.
+- Some techniques demonstrated may be dangerous if used outside authorized environments.
 
 ---
 
 # Disclaimer
 
-This repository is provided strictly for educational and authorized security training purposes. The techniques demonstrated here were performed only in controlled lab environments designed for cybersecurity learning and research.
+This repository is provided strictly for educational and authorized cybersecurity training purposes only. All techniques demonstrated were performed within controlled lab environments designed for security learning, research, and skill development.
